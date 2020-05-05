@@ -19,3 +19,4 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 });
 
 Route::post('/save', 'FileController@store')->name('save');
+Route::get('/files/{resource}', 'FileController@show');
